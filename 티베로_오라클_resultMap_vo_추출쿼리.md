@@ -7,7 +7,7 @@ SELECT COLUMN_NAME || ',' AS C1
   , LOWER (SUBSTR (COLUMN_NAME, 0, 1)) || SUBSTR (REPLACE (INITCAP (COLUMN_NAME), '_', ''), 2) || ',' AS C3
   , '#' || LOWER (COLUMN_NAME) || '#,' AS C4
   , '#' || LOWER (SUBSTR (COLUMN_NAME, 0, 1)) || SUBSTR (REPLACE (INITCAP (COLUMN_NAME), '_', ''), 2) || '#,' AS C5
-  , '#{' || LOWER (COLUMN_NAME) || '#},' AS C6
+  , '#{' || LOWER (COLUMN_NAME) || '},' AS C6
   , '#{' || LOWER (SUBSTR (COLUMN_NAME, 0, 1)) || SUBSTR (REPLACE (INITCAP (COLUMN_NAME), '_', ''), 2) || '},' AS C7
   , '<result property="' || LOWER (COLUMN_NAME)
        || '" column="' || COLUMN_NAME || '" />' AS R1
